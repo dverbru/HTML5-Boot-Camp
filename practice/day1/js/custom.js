@@ -31,10 +31,15 @@ function bindAjaxCall() {
  *            the name of the visitor
  */
 function requestWelcome(name) {
+	div = $('#response');
 	$.post('api/dispatcher.php', {
 		service : 'welcome.hello',
 		params : { 'name' : name }
 	}).done(function(data) {
-		$('#response').html(data);
+		div.html(data);
+		div.removeClass("error");
+	}).fail(function(jqXHR, textStatus, errorThrown) {
+		div.html('[' + textStatus + '] Request failed: ' + errorThrown);
+		div.addClass("error");
 	});
 }
