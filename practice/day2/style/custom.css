@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+.error {
+	background-color: #FFEEEE;
+	color: red;
+}
+
+#response {
+	margin: 1em 0;
+}
