@@ -34,7 +34,8 @@ function requestWelcome(name) {
 	$.mobile.showPageLoadingMsg();
 	
 	$(document).on('keypress.loadingMsg', function(event) {
-		if (event.keyCode === 27) {                 // if <Esc> key is pressed,
+		// if <Esc> key is pressed...
+		if (event.which == 27 || event.keyCode == 27) {
 			$(document).off('keypress.loadingMsg'); // unregister this handler
 			$.mobile.hidePageLoadingMsg();          // and hide the message.
 		}
