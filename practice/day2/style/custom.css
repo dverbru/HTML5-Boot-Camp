@@ -13,3 +13,7 @@
 #response {
 	margin: 1em 0;
 }
+
+#contentContainer {
+	width: 100%;
+}
