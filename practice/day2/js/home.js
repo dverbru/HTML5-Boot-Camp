@@ -33,11 +33,11 @@ function bindAjaxCall() {
 function requestWelcome(name) {
 	$.mobile.showPageLoadingMsg();
 	
-	$(document).on('keypress.loadingMsg', function(event) {
-		// if <Esc> key is pressed...
-		if (event.which == 27 || event.keyCode == 27) {
-			$(document).off('keypress.loadingMsg'); // unregister this handler
-			$.mobile.hidePageLoadingMsg();          // and hide the message.
+	var KEYCODE_ESC = 27; // (consistent among browsers)
+	$(document).on('keydown.loadingMsg', function(event) {
+		if (event.keyCode == KEYCODE_ESC) {		   // If <Esc> key is pressed,
+			$(document).off('keydown.loadingMsg'); // unregister these handlers
+			$.mobile.hidePageLoadingMsg();         // and hide the message.
 		}
 	});
 
