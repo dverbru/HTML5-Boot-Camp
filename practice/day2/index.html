@@ -13,17 +13,9 @@
 
 </head>
 <body>
-	<div data-role="page" id="homePage">
+	<div data-role="page" id="homePage" data-dom-cache="true">
 		<div data-role="header">
 			<h1>HTML5 boot camp – Days 2 &amp; 3</h1>
-			<div data-role="navbar">
-				<ul>
-					<li><a href="index.html" class="ui-btn-active">Home</a></li>
-					<li><a href="test1.html">One</a></li>
-					<li><a href="test2.html">Two</a></li>
-					<li><a href="test3.html">Three</a></li>
-				</ul>
-			</div><!-- /navbar -->
 		</div><!-- /header -->
 		
 		<div data-role="content">
@@ -37,7 +29,15 @@
 			<div id="response"></div>
 		</div><!-- /content -->
 		
-		<div data-role="footer">
+		<div data-role="footer" data-id="navbar" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="index.html" class="ui-btn-active ui-state-persist">Home</a></li>
+					<li><a href="test1.html">One</a></li>
+					<li><a href="test2.html">Two</a></li>
+					<li><a href="test3.html">Three</a></li>
+				</ul>
+			</div><!-- /navbar -->
 			<h4><small>© 2011 Diego Verbrugghe</small></h4>
 		</div><!-- /footer -->
 		
