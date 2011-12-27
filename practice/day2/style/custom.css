@@ -5,6 +5,11 @@
 	color: red;
 }
 
+.bigText {
+	font-size: xx-large;
+	font-weight: bold;
+}
+
 #response {
 	margin: 1em 0;
 }
