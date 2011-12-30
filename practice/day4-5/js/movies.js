@@ -3,26 +3,26 @@
  */
 
 // Let's create some movies...
-pulpFiction = new Movie();
+var pulpFiction = new bootcamp.movies.Movie();
 pulpFiction.setId(1);
 pulpFiction.setTitle('Pulp Fiction');
 pulpFiction.setRating(9);
 pulpFiction.setPubsub(pubsub);
 
-forrestGump = new Movie();
+var forrestGump = new bootcamp.movies.Movie();
 forrestGump.setId(2);
 forrestGump.setTitle('Forrest Gump');
 forrestGump.setRating(10);
 forrestGump.setPubsub(pubsub);
 
-theSOTLambs = new Movie();
+var theSOTLambs = new bootcamp.movies.Movie();
 theSOTLambs.setId(3);
 theSOTLambs.setTitle('The Silence of the Lambs');
 theSOTLambs.setRating(9);
 theSOTLambs.setPubsub(pubsub);
 
 // initialize an observer...
-observer = new MovieObserver(pubsub);
+var observer = new MovieObserver(pubsub);
 
 // and watch something.
 theSOTLambs.play();
