@@ -7,13 +7,15 @@
     <head>
         <meta charset="utf-8">
         <title><?php echo "$title: $subtitle"; ?></title>
-        <link href="css/default.css" rel="stylesheet" />
+        <link href="styles/default.css" rel="stylesheet" />
         
         <!-- jQuery -->
         <!-- include jquery toolkit here -->
         
         <!-- default javascript content -->
-        <!-- include your default js file here -->
+        <!-- data-main attribute tells require.js to load
+             scripts/main.js after require.js loads. -->
+        <script data-main="scripts/main" src="scripts/require-1.0.3-min.js"></script>
     </head>
     <body>
         <header>
