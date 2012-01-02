@@ -10,6 +10,9 @@
 		<link href="styles/default.css" rel="stylesheet" />
 
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="scripts/mustache-0.3.1-dev-twitter-b.js"></script>
+		<script src="scripts/underscore-1.2.3-min.js" type="text/javascript"></script>
+		<script src="scripts/smart-2.6.min.js" type="text/javascript"></script>
 		<script src="scripts/main.js" type="text/javascript"></script>
 	</head>
 	<body>
