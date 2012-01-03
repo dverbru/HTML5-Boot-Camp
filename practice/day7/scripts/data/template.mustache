@@ -1,0 +1,35 @@
+<div class="resume">
+<h3 class="name">{{name}}</h3>
+<p class="contactInfo">
+	{{address}}<br>
+	{{phone}}<br>
+	{{mail}}<br>
+</p>
+
+<h4>SUMMARY OF QUALIFICATIONS</h4>
+<p>{{summary}}</p>
+
+<h4>EMPLOYMENT HISTORY</h4>
+<ul>
+{{#experience}}
+	<li><strong>{{place}}</strong> ({{period}})<br>
+	<span class="job">{{job}}</span></li>
+{{/experience}}
+</ul>
+
+<h4>EDUCATION</h4>
+<ul>
+{{#education}}
+	<li><strong>{{place}}</strong><br>
+	<span class="academicTitle">{{title}}</span></li>
+{{/education}}
+</ul>
+
+<h4>AWARDS</h4>
+<ul>
+{{#awards}}
+	<li><strong>{{year}}</strong>: {{name}}</li>
+{{/awards}}
+</ul>
+
+</div>

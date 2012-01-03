@@ -7,3 +7,33 @@
 .subtitle {
 	font-family: cursive;
 }
+
+#output {
+	border-color: silver;
+	border-style: solid;
+	border-width: thin;
+	margin: 2em 0;
+	padding: 0 2em;
+}
+
+footer {
+	font-family: monospace;
+}
+
+.resume .name {
+	font-family: sans-serif;
+}
+
+.resume .contactInfo {
+	font-style: italic;
+}
+
+.resume li {
+	margin-bottom: 0.5em;
+}
+
+.resume .job,
+.resume .academicTitle {
+	font-style: italic;
+	margin-left: 1em;
+}

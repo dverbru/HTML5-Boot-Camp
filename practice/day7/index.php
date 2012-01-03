@@ -20,11 +20,17 @@
 			<h1><?php echo "<span class='title'>$title</span> – <span class='subtitle'>$subtitle</span>"; ?></h1>
 		</header>
 
-		<p>This is the boot camp, baby!</p>
+		<h2>Using template engines: an example</h2>
+		<p>
+			Below you will find a sample resume created with
+			<a href="https://github.com/janl/mustache.js">mustache.js</a>.
+		</p>
+
+		<div id="output"></div>
 
 		<footer>
 			<div><?php echo $title; ?> v1.0</div>
-			<div>@author Diego</div>
+			<div>@author Diego Verbrugghe</div>
 		</footer>
 	</body>
 </html>

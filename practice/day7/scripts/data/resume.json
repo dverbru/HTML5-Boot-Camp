@@ -1,0 +1,40 @@
+{
+	"name": "Homer J. Simpson",
+	"address": "742 Evergreen Terrace, Springfield, United States",
+	"phone": "939-555-0113",
+	"mail": "max.power@sexymail.com",
+	"summary": "Award-winning nuclear safety inspector with 20+ years' experience.",
+	"experience": [{
+		"place": "Springfield Nuclear Power Plant, Springfield, USA",
+		"period": "1989 to Present",
+		"job": "Safety Inspector"
+	}, {
+		"place": "City of Springfield, Springfield, USA",
+		"period": "2002 to 2002",
+		"job": "Chief of Police"
+	}, {
+		"place": "Moe's Tavern and Homer's Hunting Club, Springfield, USA",
+		"period": "2001 to 2001",
+		"job": "Bartender"
+	}, {
+		"place": "National Aeronautics and Space Administration (NASA), Cape Canaveral, FL",
+		"period": "1994 to 1994",
+		"job": "Astronaut"
+	}, {
+		"place": "Mr. Plow, Springfield, USA",
+		"period": "1992 to 1993",
+		"job": "Owner, Chief Marketing Officer, and Chief Driver for Snow-Plowing Business"
+	}, {
+		"place": "Springfield Isotopes Baseball Club, Springfield, USA",
+		"period": "1990 to 1990",
+		"job": "Game Mascot (\"Dancin' Homer\")"
+	}],
+	"education": [{
+		"place": "Springfield High School, Springfield, USA",
+		"title": "HS Diploma College Prep"
+	}],
+	"awards": [{
+		"year": 1992,
+		"name": "Montgomery Burns Award for Outstanding Service in the Field of Excellence"
+	}]
+}
