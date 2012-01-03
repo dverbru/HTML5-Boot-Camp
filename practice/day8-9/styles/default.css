@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+.title {
+	font-family: sans-serif;
+}
+
+.subtitle {
+	font-family: cursive;
+}
+
+#output {
+	border-color: silver;
+	border-style: solid;
+	border-width: thin;
+	margin: 2em 0;
+	padding: 0 2em;
+}
+
+footer {
+	font-family: monospace;
+}
