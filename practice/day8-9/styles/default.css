@@ -16,6 +16,10 @@
 	padding: 0 2em;
 }
 
+#output li {
+	font-style: italic;
+}
+
 footer {
 	font-family: monospace;
 }

@@ -10,6 +10,10 @@
 		<title><?php echo "$title: $subtitle"; ?></title>
 		<link href="styles/default.css" rel="stylesheet" />
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.2.2/underscore-min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.5.3/backbone-min.js"></script>
 		<script src="scripts/main.js" type="text/javascript"></script>
 	</head>
 	<body>
