@@ -1,0 +1,76 @@
+@CHARSET "UTF-8";
+
+/* Styling of HTML5's new semantic elements for non-compatible browsers */
+header, nav, article, section, footer, figure, aside {
+	display: block;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0 auto;
+	max-width: 60em;
+	padding: 0 0.5em;
+}
+
+body > header {
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+#pageTitle {
+	font-family: serif;
+}
+
+#pageSubtitle {
+	font-variant: small-caps;
+}
+
+nav ul {
+	clear: right;
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	padding-right: 1em;
+}
+
+p {
+	color: #333;
+}
+
+#mainContent {
+	border-color: silver;
+	border-style: solid;
+	border-width: thin;
+	margin: 2em 0;
+	padding: 0 2em;
+}
+
+article > header time {
+	background-color: #ccc;
+	border-radius: 1em; -moz-border-radius: 1em; -webkit-border-radius: 1em;
+	display: block;
+	float: left;
+	font-size: small;
+	font-weight: bold;
+	margin-right: 0.5em;
+	margin-top: 0.5em;
+	padding: 0 1em;
+	text-align: center;
+}
+
+aside {
+	font-family: cursive;
+	font-size: smaller;
+	float: right;
+	margin-left: 2em;
+	width: 25%;
+}
+
+footer {
+	font-family: monospace;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	text-align: right;
+}
