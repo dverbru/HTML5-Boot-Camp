@@ -1,0 +1,189 @@
+@CHARSET "UTF-8";
+
+/* Styling of HTML5's new semantic elements for non-compatible browsers */
+header, nav, article, section, footer, figure, aside {
+	display: block;
+}
+
+body {
+	background-color: #eee;
+	font-family: sans-serif;
+	margin: 0 auto;
+	max-width: 70em;
+	padding: 0 0.5em;
+}
+
+.badge {
+	float: right;
+	margin-left: 1em;
+}
+
+body > header {
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.pageTitle {
+	font-family: serif;
+}
+
+.pageSubtitle {
+	font-variant: small-caps;
+}
+
+nav ul {
+	/* clear: right; */
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	padding-right: 1em;
+}
+
+p {
+	color: #333;
+}
+
+p + p {
+	text-indent: 1.6em;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+	text-align: center;
+	font-size: smaller;
+}
+
+a[rel="bookmark"] {
+	color: inherit;
+	text-decoration: none;
+}
+
+a.headerlink {
+	opacity: 0.5;
+	padding: 0 0.2em;
+	visibility: hidden;
+}
+
+h1:hover > a.headerlink,
+h2:hover > a.headerlink,
+h3:hover > a.headerlink,
+h4:hover > a.headerlink,
+h5:hover > a.headerlink,
+h6:hover > a.headerlink,
+dt:hover > a.headerlink {
+	visibility: visible;
+}
+
+a.headerlink:hover {
+	background-color: black;
+	color: white;
+}
+
+.mainContent {
+	background-color: white;
+	border-color: silver;
+	border-style: solid;
+	border-width: thin;
+	margin: 2em 0;
+	padding: 1em 2em;
+}
+
+.multicolumn {
+	text-align: justify;
+}
+
+@media screen and (min-width: 1200px) {
+	aside {
+		width: 25%;
+	}
+
+	.multicolumn {
+		-moz-column-count: 3;
+		-moz-column-gap: 1.5em;
+		-ms-column-count: 3;
+		-ms-column-gap: 1.5em;
+		-webkit-column-count: 3;
+		-webkit-column-gap: 1.5em;
+		column-count: 3;
+		column-gap: 1.5em;
+	}
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+	aside {
+		width: 30%;
+	}
+
+	.multicolumn {
+		-moz-column-count: 2;
+		-moz-column-gap: 1.5em;
+		-ms-column-count: 2;
+		-ms-column-gap: 1.5em;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 1.5em;
+		column-count: 2;
+		column-gap: 1.5em;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	figure {
+		display: none;
+	}
+
+	aside {
+		width: 35%;
+	}
+
+	/* On screens under 800 pixels wide there will be only a single column. */
+}
+
+article > header time {
+	background-color: #ccc;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+	display: block;
+	float: left;
+	font-size: small;
+	font-weight: bold;
+	margin-right: 0.5em;
+	margin-top: 0.5em;
+	padding: 0 1em;
+	text-align: center;
+}
+
+aside {
+	font-family: cursive;
+	font-size: smaller;
+	float: right;
+	margin-left: 2.5em;
+}
+
+.source {
+	color: green;
+	height: 10em;
+	width: 100%;
+}
+
+.outputBox {
+	border-style: dashed;
+	min-height: 10em;
+	padding: 0 1em;
+}
+
+footer {
+	font-family: monospace;
+	margin-top: 3em;
+	margin-bottom: 1em;
+	text-align: right;
+}
