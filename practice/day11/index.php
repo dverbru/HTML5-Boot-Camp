@@ -66,7 +66,7 @@
 				</h2>
 			</header>
 			<textarea id="source" class="source"
-				placeholder="Write your code here..."></textarea>
+				placeholder="Write your code or drop a text file here"></textarea>
 			<button id="executeButton">Execute</button>
 			<button id="saveButton">Save</button>
 			<button id="restoreButton">Restore</button>

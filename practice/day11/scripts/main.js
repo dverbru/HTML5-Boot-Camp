@@ -37,6 +37,16 @@ function setupTester() {
 				source.value = code !== null ? code
 						: "$('#output').html('<h1>Hello World!</h1>');";
 			});
+
+	source.addEventListener('drop', function(e) {
+		e.preventDefault();
+
+		var reader = new FileReader();
+		reader.onload = function(evt) {
+			source.value = evt.target.result;
+		};
+		reader.readAsText(e.dataTransfer.files[0]);
+	}, false);
 }
 
 $(document).ready(function() {
