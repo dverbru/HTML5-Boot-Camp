@@ -10,10 +10,32 @@ function appendScript(code) {
 	head.appendChild(newScript);
 }
 
+function saveSourceCode(code) {
+	window.localStorage.setItem('source', code);
+}
+
+function restoreSourceCode() {
+	return window.localStorage.getItem('source');
+}
+
 function setupTester() {
+	var source = document.getElementById('source');
+
 	document.getElementById('executeButton').addEventListener('click',
 			function() {
-				appendScript(document.getElementById('source').value);
+				appendScript(source.value);
+			});
+
+	document.getElementById('saveButton').addEventListener('click',
+			function() {
+				saveSourceCode(source.value);
+			});
+
+	document.getElementById('restoreButton').addEventListener('click',
+			function() {
+				var code = restoreSourceCode();
+				source.value = code !== null ? code
+						: "$('#output').html('<h1>Hello World!</h1>');";
 			});
 }
 
