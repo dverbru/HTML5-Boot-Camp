@@ -10,13 +10,17 @@
 	<title><?php echo "$pageTitle - $app"; ?></title>
 	<link href="styles/default.css" rel="stylesheet" />
 
-	<!--[if IE]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	<script src="scripts/lib/modernizr.custom.98979.js"></script>
 	<script src="scripts/lib/jquery-1.7.1.min.js"></script>
 	<script src="scripts/main.js"></script>
 </head>
 <body id="top">
+	<!-- This web app will not function without JavaScript enabled -->
+	<noscript>
+		<div>Your web browser must have JavaScript enabled in order for this
+			application to display correctly.</div>
+	</noscript>
+
 	<a href="http://www.w3.org/html/logo/"> <img class="badge"
 		src="img/html5-badge-v-css3-semantics-storage.png"
 		width="38" height="170"
