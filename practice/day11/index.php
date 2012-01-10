@@ -1,0 +1,91 @@
+<?php
+	$app = "HTML5 Practice";
+	$version = "1.0.0";
+	$pageTitle = "Day 11: HTML5 APIs";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title><?php echo "$pageTitle - $app"; ?></title>
+	<link href="styles/default.css" rel="stylesheet" />
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="scripts/lib/jquery-1.7.1.min.js"></script>
+	<script src="scripts/main.js"></script>
+</head>
+<body id="top">
+	<a href="http://www.w3.org/html/logo/"> <img class="badge"
+		src="img/html5-badge-v-css3-semantics-storage.png"
+		width="38" height="170"
+		alt="HTML5 Powered with CSS3 / Styling, Semantics, and Offline Storage"
+		title="HTML5 Powered with CSS3 / Styling, Semantics, and Offline Storage">
+	</a>
+
+	<header>
+		<hgroup>
+			<h1 class='pageTitle'><?php echo $pageTitle; ?></h1>
+			<h2 class='pageSubtitle'>A simple javascript code tester</h2>
+		</hgroup>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+	<p>
+		This a sample page demostrating the power of some new <strong>HTML5 APIs</strong>.
+	</p>
+
+	<section id="jstesttool" class="mainContent">
+		<aside>
+			<h3>Help:</h3>
+			<p>
+				Write code &amp; &ldquo;run&rdquo; :)
+			</p>
+		</aside>
+
+		<header>
+			<h1>
+				JS Test Tool&trade; <a rel="bookmark" class="headerlink"
+					title="Permalink to this headline" href="#jstesttool">¶</a>
+			</h1>
+		</header>
+
+		<section>
+			<header>
+				<h2>
+					Source Code
+					<code>// jQuery available in global $</code>
+				</h2>
+			</header>
+			<textarea id="source" class="source"
+				placeholder="Write your code here...">$('#output').html('&lt;h1&gt;Hello World!&lt;/h1&gt;');</textarea>
+			<button id="executeButton">Execute</button>
+		</section>
+
+		<section>
+			<header>
+				<h2>
+					Output Area
+					<code>// #output (if you want to)</code>
+				</h2>
+			</header>
+			<article id="output" class="outputBox"></article>
+		</section>
+	</section>
+
+	<a href="#top">Back to top</a>
+
+	<footer>
+		<div><?php echo "$app v$version"; ?></div>
+		<div>&copy; 2011 Diego Verbrugghe</div>
+	</footer>
+</body>
+</html>
